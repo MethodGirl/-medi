@@ -118,7 +118,9 @@ body {
   /**
     Унифицированный интерлиньяж
    */
-  line-height: 1.5;
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /**
@@ -144,12 +146,17 @@ svg * {
   Удаляем все анимации и переходы для людей,
   которые предпочитают их не использовать
  */
+<<<<<<< Updated upstream
 body {
   font-family: var(--font-family-base);
   font-size: 18px;
   line-height: 21px;
 }
 
+=======
+/* TODO: импорт шрифтов вынести в отдельный файл, чтобы не захломлять файл слитей */
+/* TODO: переменные тоже лучше в отдельный файл вынести и учитывая, что мы используем scss, то будем использвать scss-переменные */
+>>>>>>> Stashed changes
 a {
   color: var(--color-black);
   text-decoration: none;
@@ -834,11 +841,12 @@ footer .footer-container .footer-top {
 footer .footer-container .footer-top .footer-services-title {
   font-size: 21px;
   line-height: 31px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 footer .footer-container .footer-top li {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   display: inline-block;
+  min-height: 24px;
 }
 footer .footer-container .footer-top li a {
   font-size: 14px;
@@ -846,6 +854,7 @@ footer .footer-container .footer-top li a {
   color: var(--color-black);
 }
 footer .footer-container .footer-top li a:hover {
+<<<<<<< Updated upstream
   color: var(--color-dark-blue);
 }
 footer .footer-container .footer-top li:hover {
@@ -856,6 +865,12 @@ footer .footer-container .footer-top li:hover {
       -ms-transform-origin: left;
           transform-origin: left;
 }
+=======
+  font-size: 16px;
+  min-height: 24px;
+  color: var(--color-dark-blue);
+}
+>>>>>>> Stashed changes
 footer .footer-container .footer-top li:last-child {
   margin-bottom: 0;
 }
@@ -865,6 +880,29 @@ footer .footer-container address {
 footer .footer-container address .footer-info:first-child {
   margin-bottom: 30px;
   height: 55px;
+}
+footer .footer-container address .footer-address-link {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  padding: 15px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+footer .footer-container address .footer-address-link:hover {
+  background-color: var(--color-blue);
+}
+footer .footer-container address .footer-phone-link:hover {
+  color: var(--color-blue);
+  border-bottom: 3mm ridge #4fbfa5;
+}
+footer .footer-container address .footer-address-name {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--color-black);
 }
 footer .footer-container address .footer-info {
   margin-bottom: 30px;
@@ -876,34 +914,6 @@ footer .footer-container address .footer-info .footer-info-title {
   margin-bottom: 10px;
   color: var(--color-light-gray);
   line-height: 16px;
-}
-footer .footer-container address .footer-info .footer-phone-link:hover {
-  color: var(--color-blue);
-  border-bottom: 3mm ridge #4fbfa5;
-}
-footer .footer-container address .footer-info .footer-address-name {
-  font-size: 21px;
-  line-height: 31px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: var(--color-black);
-}
-footer .footer-container address .footer-info a {
-  font-size: 21px;
-  line-height: 31px;
-  font-weight: 700;
-}
-footer .footer-container address .footer-info .footer-address-link {
-  background-color: var(--color-dark-blue);
-  color: var(--color-white);
-  padding: 15px 25px;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 300;
-}
-footer .footer-container address .footer-info .footer-address-link:hover {
-  background-color: var(--color-blue);
 }
 footer .container-footer-bottom {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
@@ -958,21 +968,21 @@ footer .container-footer-bottom ul li:last-child {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
-  src: url("../font/Gilroy-ExtraBold.otf") format("OpenType");
+  src: url("../font/Gilroy-ExtraBold.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
   font-style: light;
   font-weight: 300;
-  src: url("../font/Gilroy-Light.otf") format("OpenType");
+  src: url("../font/Gilroy-Light.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  src: url("../font/gilroy-medium.ttf") format("OpenType");
+  src: url("../font/Gilroy-Medium.woff2") format("woff2");
   font-display: swap;
 }
 :root {
