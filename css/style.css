@@ -146,17 +146,12 @@ svg * {
   Удаляем все анимации и переходы для людей,
   которые предпочитают их не использовать
  */
-<<<<<<< Updated upstream
 body {
   font-family: var(--font-family-base);
   font-size: 18px;
   line-height: 21px;
 }
 
-=======
-/* TODO: импорт шрифтов вынести в отдельный файл, чтобы не захломлять файл слитей */
-/* TODO: переменные тоже лучше в отдельный файл вынести и учитывая, что мы используем scss, то будем использвать scss-переменные */
->>>>>>> Stashed changes
 a {
   color: var(--color-black);
   text-decoration: none;
@@ -854,7 +849,6 @@ footer .footer-container .footer-top li a {
   color: var(--color-black);
 }
 footer .footer-container .footer-top li a:hover {
-<<<<<<< Updated upstream
   color: var(--color-dark-blue);
 }
 footer .footer-container .footer-top li:hover {
@@ -865,12 +859,6 @@ footer .footer-container .footer-top li:hover {
       -ms-transform-origin: left;
           transform-origin: left;
 }
-=======
-  font-size: 16px;
-  min-height: 24px;
-  color: var(--color-dark-blue);
-}
->>>>>>> Stashed changes
 footer .footer-container .footer-top li:last-child {
   margin-bottom: 0;
 }
